@@ -1,0 +1,261 @@
+/*MAIN CSS*/
+
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+*::selection {
+    background: rgba(0, 0, 0, 0.5); /* WebKit/Blink Browsers */
+}
+
+
+::-webkit-scrollbar              {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track        {
+    background: #2b2b2b;
+}
+
+::-webkit-scrollbar-thumb        {
+    background: #666;
+}
+
+::-webkit-scrollbar-thumb:hover  {
+    background: #8c8c8c;
+}
+
+/****************
+    Jumbotron
+****************/
+
+.video {
+    position:    absolute;
+    z-index:    -2;
+    right:      0;
+    top:        0;
+    width:      100%;
+    height:     50vh;
+    overflow:   hidden;
+}
+
+#myVideo {
+    max-width:  100%;
+    min-height: 50vh;
+}
+
+.jumbotron.header {
+    padding:    0;
+    background: none;
+    width:      100%;
+    min-height: 50vh;
+    display:    table;
+}
+
+.jumbotron.header .jumbotron-text {
+    display:        table-cell;
+    vertical-align: middle;
+    color:          white;
+    text-shadow:    0px 2px 5px black;
+}
+
+.jumbotron-text h1 {
+    position: relative;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1.5s;
+    animation-name: animatetop;
+    animation-duration: 1.5s;
+    font-weight: 400;
+}
+
+.jumbotron-text h5 {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+    border-bottom: none;
+    font-weight: 300;
+}
+
+
+@-webkit-keyframes animatetop {
+  from  { top:-50px;       opacity:0; } 
+  to    { top:0px;          opacity:1 }
+}
+
+@keyframes animatetop {
+  from  { top:-50px;       opacity:0 } 
+  to    { top:0;            opacity:1 }
+}
+
+@-webkit-keyframes animatebottom {
+  from  { bottom:-100px;    opacity:0 } 
+  to    { bottom:0px;       opacity:1 }
+}
+
+@keyframes animatebottom {
+  from  { bottom:-100px;    opacity:0 } 
+  to    { bottom:0;         opacity:1 }
+}
+
+
+/*************
+    NAVBAR
+*************/
+
+.navbar  {
+    background-color:   #2b2b2b;
+    border-radius:      inherit;
+    margin:             0;
+    border:             none;
+    transition:         0.5s ease-in-out;
+}
+
+.navbar.header-shadow {
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 5px 15px -5px rgba(0,0,0,0.75);
+    box-shadow:         0px 5px 15px -5px rgba(0,0,0,0.75);
+}
+
+.nav-item a {
+    transition: 0.3s ease-in-out;
+}
+
+
+/***********
+    MAIN
+***********/
+
+.container-fluid.main {
+    padding: 0;
+}
+
+.row {
+    display:    block;
+    padding:    30px 0px;
+    margin:     0;
+    min-height: calc(50vh - 25px);
+}
+
+.hideme {
+    opacity: 0;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section header {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom:  1px solid #2b2b2b;
+    padding-bottom: 10px;
+}
+
+h5 {
+    border-bottom:  1px solid #2b2b2b;
+    padding-bottom: 2.5px;
+    margin-bottom:  15px;
+}
+
+
+/**************
+    POPOVER
+**************/
+
+#popover {
+    cursor:             default;
+    color:              white;
+    text-decoration:    none;
+}
+
+
+/***************
+    CAROUSEL
+***************/
+
+.carousel {
+    position:       relative;
+    margin-bottom:  80px;
+}
+
+.carousel-inner {
+    margin-bottom: 50px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    color: #2b2b2b;
+}
+
+.video-container {
+	position:          relative;
+	padding-bottom:    56.20%;
+	height:            0;
+	overflow:          hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:  absolute;
+	top:       0;
+	left:      0;
+	width:     100%;
+	height:    100%;
+}
+
+/***************
+    PARALLAX
+***************/
+
+.parallax-window {
+    min-height:             300px;
+    width:                  100%;
+    background:             transparent;
+    -webkit-box-shadow:     inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:        inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow:             inset 0px 0px 15px 0px rgba(0,0,0,0.75);
+    background-blend-mode:  overlay;
+    background-color:       rgba(0, 0, 0, 0.25);
+}
+
+/*************
+    FOOTER
+*************/
+
+.jumbotron.footer {
+    background:     #2b2b2b;
+    width:          100%;
+    display:        table;
+    padding:        15px;
+    margin-bottom:  0px;
+    border-radius:  inherit;
+}
+
+.jumbotron.footer .jumbotron-text {
+    display:        table-cell;
+    vertical-align: middle;
+    color:          white;
+    text-shadow:    0px 2px 5px black;
+}
+
+.jumbotron-text p {
+    margin: 0px;
+}

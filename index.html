@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Portfolioverslag</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+<!--    BOOTSTRAP 4 CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        
+        
+<!--    CSS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/extra_small_devices.css">
+        <link rel="stylesheet" href="css/small_devices.css">
+        <link rel="stylesheet" href="css/medium_devices.css">
+        <link rel="stylesheet" href="css/large_devices.css">
+        <link rel="stylesheet" href="css/extra_large_devices.css">
+        
+
+        
+        
+<!--    MAIN JAVASCRIPT FROM W3S-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        
+<!--    PARALLEX PLUGIN-->
+        <script src="parallax.js-1.5.0/parallax.js"></script>
+        
+        
+<!--    OWN JAVASCRIPT-->
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+
+        
+<!-- Fontawesome JAVA -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        
+        <header class="header" id="home">
+            <div class="video" id="home">
+                <video autoplay muted loop id="myVideo">
+                    <source src="video/Time_Lapse-Mountain-Sunset_2-Video_Background_HD_1080p.mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <div class="jumbotron header text-center" style="margin-bottom:0">
+                <div class="jumbotron-text">
+                    <h1>Portfolioverslag</h1>
+                    <h5>Een site gebouwd met Bootstrap 4</h5>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="change-it-now">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home ">Portfolioverslag</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inleiding">Inleiding</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bootstrap-4">Bootstrap 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#javascript">Javascript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jquery">jQuery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eindreflectie">Eindreflectie</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="nav navbar-nav ml-auto">
+                        <li>
+                            <a href="http://eduweb.hhs.nl/~17012988/portfolio-stijn-slats/" target="_blank" class="btn btn-outline-primary" role="button" style="color: white;"><i class="fas fa-briefcase"></i> Digitaal Portfolio</a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+
+        <div class="container-fluid main" id="change-it-now">
+            <section class="row" id="inleiding">
+                <header class="col-md-12 text-center">
+                    <h2>Inleiding</h2>
+                </header>
+                <article class="col-md-10 mx-auto">
+                    <p>
+                    Gedurende het schooljaar hebben we een ontwikkelportfolio moeten maken. Een van opdracht die we hiervoor in moeten leveren is een portfolioverslag. Deze is gebaseerd op het doel wat ik beschreven heb in mijn POP (zie bijlage A). Dat doel is mijzelf verbeteren in het programmeren. Het programmeren heb ik opgesplitst in Boostrap 4, JavaScript en jQuery.
+<br><br>
+                    De vraag die ik voor mijzelf gesteld heb is:
+<br>                <i>Hoe kan ik minder tijd besteden in het schrijven van een efficiëntere code?</i>
+<br><br>
+                    Het p-portfolio is een opdracht voor school, maar de website die ik om het verslag heen gebouwd heb is ook bedoel als voorbeeld om te laten zien aan toekomstige werk- en stagebedrijven.
+<br><br>
+                    Het verslag is opgedeeld in verschillende hoofdstukken. Deze staan op volgorde van ontwikkelactiviteit. Nadat ik dit heb beschreven komt er nog een stukje reflectie, en als laatst zal ik de gemaakte uren verantwoorden.
+                    </p>
+                </article>
+            </section>
+            
+            <div class="img-fluid w-100 parallax-window" data-parallax="scroll" data-image-src="image/Bootstrap4/bootstrap-4.jpeg" data-android-fix="true" data-ios-fix="true" data-speed="0.7"></div>
+            
+            <section class="row hideme" id="bootstrap-4">
+                <header class="col-md-12 text-center">
+                    <h2>Ontwikkelactiviteit 1</h2>
+                    <h4>Bootstrap 4</h4>
+                </header>
+                <article class="col-md-10 mx-auto">
+                    <p>
+                        In dit hoofdstuk heb ik mij verdiept in Bootstrap 4. Dit sluit perfect aan bij het ontwikkeldoel dat ik heb beschreven in mijn POP. Dit doel gaat over programmeren. Bootstrap 4 is een soort template die je kunt downloaden die het voor jou makkelijker maakt om een website in elkaar te zetten. Dit zorgt er uiteindelijk voor dat ik meer tijd voor andere projecten over houd. In de eerste paragraaf geef ik een beschrijving over de werkwijze. In de tweede paragraaf beschrijf ik een korte reflectie. En tot slot verantwoord ik de gemaakte uren.
+                    </p>
+                    
+                    <h5>Werkwijze</h5>
+                    
+                    <p>
+                        Bij deze ontwikkelactiviteit ging het mij erom dat ik gemakkelijker een website in elkaar kon zetten. Hiervoor gebruik ik Bootstrap 4. 
+<br><br>
+                        Het product wat hierbij hoort is uiteindelijk een zelfgemaakte website waarin ik met Bootstrap 4 werk. De website die ik bouw is uiteindelijk een onlineversie van dit verslag. <a href="http://eduweb.hhs.nl/~17012988/portfolioverslag/" target="_blank">eduweb.hhs.nl/~17012988</a>
+<br><br>                        
+                        Als eerst ben ik op <a href="https://www.w3schools.com/bootstrap4/default.asp">w3schools.com/bootstrap4</a> gaan kijken. Hier staat een lange tutorial over wat Bootstrap is en hoe je het kan gebruiken. Hierna ben ik een beetje gaan spelen met Bootstrap. Het probleem is dat Bootstrap 4 redelijk nieuw is. Het kan dus voorkomen dat er wat kleine foutjes in het bestand zitten waardoor je er niet helemaal uit komt. Daarom ben ik naar tutorials op <a href="https://www.youtube.com/?hl=nl&gl=NL" target="_blank">YouTube</a> gaan zoeken als ik tegen een fout aanliep. Ook heb ik raad gepleegd op <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>. Dit is een online platform waar programmeurs elkaar kunnen helpen met hun code.
+<br><br>
+                        Wat ik vooral belangrijk vond is dat ik het niet alleen kopieer en plak van tutorials, maar ook dat ik zelf daadwerkelijk snap waar ik mee bezig ben. Daarnaast ben ik nogal perfectionistisch en stop ik dus niet totdat de code eindelijk werkt. Soms ben ik dus ook uren bezig met een klein en simpel iets. Het enige is dat je wel moet weten hoe dat simpele in elkaar zit.
+<br><br>
+                        De conclusie die ik uiteindelijk getrokken heb is dat Bootstrap 4 zeker een goed hulpmiddel is bij het bouwen van een website. Ik ga dit dus ook zeker gebruiken in mijn volgende projecten.
+                    </p>
+                    
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-boot" class="carousel slide carousel-fade carousel-thumbnails col-md-8 mx-auto" data-ride="carousel">
+                        
+                        
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 rounded" src="image/Bootstrap4/PrintScreen_W3S_Bootstrap4.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="video-fluid video-container" id="carousel-video" autoplay loop>
+                                    <iframe src="https://www.youtube.com/embed/L0uNai3XyKQ" class="rounded" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_StackOverflow.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded" src="image/Bootstrap4/PrintScreen_Bootstrap_Code.jpg" alt="Fourth slide">
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        
+                        
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-boot" role="button" data-slide="prev">
+                            <i class="fas fa-chevron-left fa-4x"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-boot" role="button" data-slide="next">
+                            <i class="fas fa-chevron-right fa-4x"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                        
+                        
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-boot" data-slide-to="0" class="active">
+                                <img class="d-block w-100 rounded" src="image/Bootstrap4/PrintScreen_W3S_Bootstrap4.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-boot" data-slide-to="1">
+                                <img class="d-block w-100 rounded" src="image/Bootstrap4/YoutTube_Thumbnail_Bootstrap4.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-boot" data-slide-to="2">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_StackOverflow.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-boot" data-slide-to="3">
+                                <img class="d-block w-100 rounded" src="image/Bootstrap4/PrintScreen_Bootstrap_Code.jpg" class="img-fluid">
+                            </li>
+                        </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                    
+                    <h5>Reflectie</h5>
+                    
+                    <p>
+                        Wat erg gemakkelijk ging was het opzetten van een frame. Hier zijn standaard classes voor de uitgelegd worden op <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">w3schools.com/bootstrap4</a>. Als je je hieraan houdt is er niks aan de hand.
+<br>
+                        Waar ik wel een probleem mee had was de navigatie. Wanneer ik de site ging controleren op mijn telefoon, bleek dat de navigatie niet automatisch inklapte als ik op een link klikte. Hier ben ik toch enkele uren zoet mee geweest.
+<br>
+                        Aangezien programmeren veel tijd in beslag neemt en je niet zomaar een site gebouwd hebt, zijn er maar weinig mensen die echt de tijd voor je vrij kunnen maken. Het probleem is dat bijna elke programmeur weer een andere manier van schrijven heeft. Dit betekent dat het al genoeg tijd kost om &uuml;berhaupt andermans code te begrijpen. 
+<br><br>
+                        Uiteindelijk ben ik toch blij met de skill die ik mijzelf heb bijgeleerd. Hiervoor was ik totaal niet bekent met Bootstrap 4. Het heeft een totaal nieuwe wereld voor mij geopend. Werken met Bootstrap is veel makkelijker en effici&euml;nter. 
+<br>
+                        Echter valt er in Bootstrap nog genoeg te leren. Er zijn nog genoeg functies en classes waar ik &uuml;berhaupt nog niet vanaf weet.
+                    </p>
+                    
+                    <h6>Bootstrap 4 progress</h6>
+                    <div class="progress" style="height:25px">
+                        <a href="#" class="progress-bar progress-bar-striped progress-bar-animated" id="popover" style="width:76%; height: 25px;" data-toggle="popover" data-placement="right" data-content="De progressie die ik heb gemaakt" data-trigger="hover">76%</a>
+                    </div>
+<br><br>
+                    <figure class="col-md-6 mx-auto">
+                        <figcaption class="figure-caption text-center"><h6>W3Schools Bootstrap Quiz</h6></figcaption>
+                        <img src="image/Bootstrap4/W3S_Bootstrap_Quiz.jpg" class="img-fluid d-block rounded" alt="Bootstrap Quiz">
+                    </figure>
+<br><br>
+                    <h5>Urenverantwoording</h5>
+                    
+                    <p>
+                        Als je nog geen kennis hebt van Bootstrap, dan heb je een hoop te leren. Dit neemt een hoop tijd in beslag. Aangezien Bootstrap voor het grootste deel werkt op css en javascript, heb je hier ook enige kennis van nodig. Soms wil je weleens wat aanpassen in de animatie bijvoorbeeld. Om de basis te leren van Bootstrap via <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">w3schools.com/bootstrap4</a> ben je al een goede 10 uur verder. Dit komt doordat je de tutorials ook daadwerkelijk zelf wilt proberen om te kijken of het wel echt werkt. Naast de tutorial van W3Schools heb ik ook tutorials op <a href="https://www.youtube.com/?hl=nl&gl=NL" target="_blank">YouTube</a> bekeken. Sommige tutorials duren al langer dan een uur. Andere tutorials duren weer 5 minuten. Aangezien ik niet altijd iets aan elke tutorial heb gehad, tel ik deze dus ook niet mee. Uiteindelijk heb ik toch zo’n 8 uur aan tutorials bekeken.
+                    </p>
+                    
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Tutorial site</th>
+                                <th>Aantal uur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>W3Schools</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Youtube</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                        
+                        <tfoot class="thead-dark">
+                            <tr>
+                                <th>Totaal:</th>
+                                <th>18</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                </article>
+            </section>
+            
+            <div class="img-fluid w-100 parallax-window" data-parallax="scroll" data-image-src="image/JavaScript/javascript.png" data-android-fix="true" data-ios-fix="true" data-speed="0.7"></div>
+            
+            <section class="row hideme" id="javascript">
+                <header class="col-md-12 text-center">
+                    <h2>Ontwikkelactiviteit 2</h2>
+                    <h4>JavaScript</h4>
+                </header>
+                <article class="col-md-10 mx-auto">
+                    <p>
+                        In dit hoofdstuk heb ik mij verdiept in JavaScript, dieper dan we op school hebben gedaan. Dit sluit perfect aan bij het ontwikkeldoel dat ik heb beschreven in mijn POP. Dit doel gaat over programmeren. JavaScript is bedoeld om je site interactief te maken. Dit vind ik erg belangrijk. Het geeft namelijk een fijne ervaring aan degene die je site bezoeken. Denk bijvoorbeeld aan een smooth scroll. Dit houdt in dat als je op een link drukt, je op een mooie manier naar de juiste sectie wordt gebracht. In de eerste paragraaf geef ik een beschrijving over de werkwijze. In de tweede paragraaf beschrijf ik een korte reflectie. En tot slot verantwoord ik de gemaakte uren.
+                    </p>
+                    
+                    <h5>Werkwijze</h5>
+                    
+                    <p>
+                        Bij deze ontwikkelactiviteit ging het mij er vooral om dat de site interactie heeft. Dit is tegenwoordig erg belangrijk op een site. Dit geeft een betere ervaring.
+<br><br>
+                        Uiteindelijk wil ik dus dat mijn website naar wens gaat functioneren met de nodige functies. Denk hierbij aan smooth scrolling en een navigatie die op je mobiel automatisch inklapt.
+<br><br>
+                        Als eerst ben ik gaan kijken op <a href="https://www.w3schools.com/jS/default.asp" target="_blank">w3schools.com/jS</a>. Hier staat een lange tutorial over wat JavaScript is en hoe je het kan gebruiken. Hierna ben ik een beetje gaan spelen met JavaScript. Het voordeel van JavaScript is dat je onwijs veel mogelijkheden hebt. Echter heeft ieder voordeel ook zijn nadeel. JavaScript is namelijk een stuk ingewikkelder dan bijvoorbeeld Bootstrap. Ook is het lastiger om alle functies te onthouden doordat het zo breed is. Naast W3Schools heb ik ook tutorial op <a href="https://www.youtube.com/?hl=nl&gl=NL" target="_blank">YouTube</a> bekeken. bekeken. Hier wordt soms iets dieper op de taal ingegaan. Ook heb ik weer veel gebruik gemaakt van <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>.
+<br><br>
+                        Bij JavaScript vond ik het vooral belangrijk dat ik de code zo effici&euml;nt mogelijk kon schrijven. Je kan je code namelijk op vele verschillende manier schrijven. Verder moest ik over JavaScript veel kennis opdoen om uiteindelijk jQuery te begrijpen.
+<br><br>
+                        De conclusie die ik uiteindelijk bij JavaScript kon trekken is dat het zeker een lastig onderdeel is, en ik er nog meer dan genoeg over kan leren. Echter ben ik van mening dat je nooit alles zal kunnen onthouden. Dit betekend dat je altijd dingen op zal moeten blijven zoeken.
+                    </p>
+                    
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-java" class="carousel slide carousel-fade carousel-thumbnails col-md-8 mx-auto" data-ride="carousel">
+                        
+                        
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 rounded" src="image/JavaScript/PrintScreen_W3S_JavaScript.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="video-fluid video-container" id="carousel-video" autoplay loop>
+                                    <iframe src="https://www.youtube.com/embed/fju9ii8YsGs" class="rounded" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_StackOverflow.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_JavaScript_code.jpg" alt="Fourth slide">
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        
+                        
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-java" role="button" data-slide="prev">
+                            <i class="fas fa-chevron-left fa-4x"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-java" role="button" data-slide="next">
+                            <i class="fas fa-chevron-right fa-4x"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                        
+                        
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-java" data-slide-to="0" class="active">
+                                <img class="d-block w-100 rounded" src="image/JavaScript/PrintScreen_W3S_JavaScript.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-java" data-slide-to="1">
+                                <img class="d-block w-100 rounded" src="image/JavaScript/PrintScreen_YouTube_Thumbnail_JavaScript.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-java" data-slide-to="2">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_StackOverflow.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-java" data-slide-to="3">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_JavaScript_code.jpg" class="img-fluid">
+                            </li>
+                        </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                    
+                    <h5>Reflectie</h5>
+                    
+                    <p>
+                        Het eerste deel van JavaScript ging nog redelijk goed. Dit hebben we natuurlijk op school al deels gehad. Denk bijvoorbeeld aan de CamelCase en variabele benoemen.
+<br>
+                        Wat iets minder goed ging was het daadwerkelijk toevoegen van de javascript in m’n eigen code. Dit komt omdat je dan bijvoorbeeld iets vergeet te veranderen of weer net een hoofdletter mist.
+<br>
+                        De volgende zou ik denk ik toch hulp gaan zoeken voor JavaScript. Wellicht door een post op Facebook te zetten of iets dergelijks. JavaScript is een redelijk moeilijke taal.
+<br><br>
+                        Uiteindelijk ging het mij erom dat ik javascript beter zou leren begrijpen en het makkelijker kon typen. Dit is gelukt.
+<br>
+                        Toch valt er nog meer dan genoeg te leren in JavaScript. JavaScript is ongelooflijk breed. Er valt dus altijd nog wat bij te spijkeren.
+
+                    </p>
+                    
+                    <h6>JavaScript 4 progress</h6>
+                    <div class="progress" style="height:25px">
+                        <a href="#" class="progress-bar progress-bar-striped progress-bar-animated" id="popover" style="width:84%; height: 25px;" data-toggle="popover" data-placement="right" data-content="De progressie die ik heb gemaakt" data-trigger="hover">84%</a>
+                    </div>
+<br><br>
+                    <figure class="col-md-8 mx-auto">
+                        <figcaption class="figure-caption text-center"><h6>W3Schools JavaScript Quiz</h6></figcaption>
+                        <img src="image/JavaScript/W3C_JavaScript_Quiz.jpg" class="img-fluid d-block rounded" alt="Bootstrap Quiz">
+                    </figure>
+<br><br>
+                    <h5>Urenverantwoording</h5>
+                    
+                    <p>
+                        Omdat JavaScript zo ongelooflijk breed is, is er veel tijd in gaan zitten. De tutorial van <a href="https://www.w3schools.com/jS/default.asp" target="_blank">w3schools.com/jS</a> heeft me al ruim 13 uur gekost. Daarnaast heb ik een hoop tutorials gekeken op <a href="https://www.youtube.com/?hl=nl&gl=NL" target="_blank">YouTube</a>. De tutorials verschillen, net zoals bij bootstrap, flink in tijd. Toch heb ik er nog ruim 10 uur aan besteed.
+                    </p>
+                    
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Tutorial site</th>
+                                <th>Aantal uur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>W3Schools</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>Youtube</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                        
+                        <tfoot class="thead-dark">
+                            <tr>
+                                <th>Totaal:</th>
+                                <th>23</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                </article>
+            </section>
+            
+            <div class="img-fluid w-100 parallax-window" data-parallax="scroll" data-image-src="image/jQuery/jquery.jpg" data-android-fix="true" data-ios-fix="true" data-speed="0.7"></div>
+            
+            <section class="row hideme" id="jquery">
+                <header class="col-md-12 text-center">
+                    <h2>Ontwikkelactiviteit 3</h2>
+                    <h4>jQuery</h4>
+                </header>
+                <article class="col-md-10 mx-auto">
+                    <p>
+                        In dit hoofdstuk heb ik mij verdiept in jQuery. Dit sluit perfect aan bij het ontwikkeldoel dat ik heb beschreven in mijn POP. Dit doel gaat over programmeren. JQuery is bedoeld om je site interactief te maken, maar dan op een zo effici&euml;nt mogelijke manier. Dit vind ik erg belangrijk. Door zo effici&euml;nt mogelijk te werk te gaan versnel je de laadtijd van je website. Dit zorgt voor minder frustraties. In de eerste paragraaf geef ik een beschrijving over de werkwijze. In de tweede paragraaf beschrijf ik een korte reflectie. En tot slot verantwoord ik de gemaakte uren.
+                    </p>
+                    
+                    <h5>Werkwijze</h5>
+                    
+                    <p>
+                        Bij jQuery gaat het vooral om het zo effici&euml;nt mogelijk schrijven van de code. JQuery is een bibliotheek van JavaScript, wat inhoudt dat je termen in jQuery kunt gebruiken die herkend worden uit JavaScript.
+<br><br>
+                        Uiteindelijk draait het er net als bij JavaScript om dat de website die ik om het verslag heen bouw, goed en naar behoren functioneert. 
+<br><br>
+                        Het eerste waar ik op ben gaan kijken is, en je raad het nooit, <a href="https://www.w3schools.com/Jquery/default.asp" target="_blank">w3schools.com/Jquery</a>. Ook hier staat een tutorial over jQuery op. Deze tutorial is een stuk korter dan die van JavaScript. Dit komt doordat jQuery gebaseerd is op JavaScript. Daarna ben ik weer tutorials gaan kijken op <a href="https://www.youtube.com/?hl=nl&gl=NL" target="_blank">YouTube</a>. Hier kan je stap voor stap volgen hoe bepaalde codes in elkaar zitten. Ook hier heb ik weer raad gepleegd op <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+<br><br>
+                        Het meest belangrijke vond ik, naast dat de codes natuurlijk horen te werken, dat de codes zo kort en effici&euml;nt mogelijk zijn geschreven. Dit verkort de laadtijd van de website overduidelijk.
+<br><br>
+                        De conclusie die ik hier uiteindelijk uit kan trekken is dat jQuery ongelooflijk fijn is om mee te werken. Het bespaart je onwijs veel tijd en je code zit een stuk beter en effici&euml;nter in elkaar.
+                    </p>
+                    
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-jquery" class="carousel slide carousel-fade carousel-thumbnails col-md-8 mx-auto" data-ride="carousel">
+                        
+                        
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 rounded" src="image/jQuery/PrintScreen_W3S_jQuery.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="video-fluid video-container" id="carousel-video" autoplay loop>
+                                    <iframe src="https://www.youtube.com/embed/BWXggB-T1jQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_StackOverflow.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_JavaScript_code.jpg" alt="Fourth slide">
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        
+                        
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-jquery" role="button" data-slide="prev">
+                            <i class="fas fa-chevron-left fa-4x"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-jquery" role="button" data-slide="next">
+                            <i class="fas fa-chevron-right fa-4x"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                        
+                        
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-jquery" data-slide-to="0" class="active">
+                                <img class="d-block w-100 rounded" src="image/JavaScript/PrintScreen_W3S_JavaScript.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-jquery" data-slide-to="1">
+                                <img class="d-block w-100 rounded" src="image/jQuery/PrintScreen_YouTube_Thumbnail_jQuery.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-jquery" data-slide-to="2">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_StackOverflow.jpg" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-jquery" data-slide-to="3">
+                                <img class="d-block w-100 rounded" src="image/PrintScreen_JavaScript_code.jpg" class="img-fluid">
+                            </li>
+                        </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                    
+                    <h5>Reflectie</h5>
+                    
+                    <p>
+                        Wat aardig goed ging was het onder de knie krijgen van de basis van jQuery. JQuery maakt op zich gebruik van makkelijke termen en short cuts. Zo is het bijvoorbeeld heel makkelijk om via de code terug te koppelen aan een id of class.
+<br>
+                        Wat iets lastiger was, was het daadwerkelijk begrijpen van de taal. Soms lijkt het net alsof je dingen andersom moet lezen.
+<br>                        
+                        Volgende keer zou ik ook hier graag hulp bij vragen. Het blijft toch redelijk lastig. Daarnaast moet ik veel blijven oefenen. 
+<br><br>
+                        Ik heb een hoop kunnen leren van de tutorials. Voornamelijk hoe ik mijn code effici&euml;nter kan schrijven. Dit scheelt een hoop tijd.
+                    </p>
+                    
+                    <h6>jQuery progress</h6>
+                    <div class="progress" style="height:25px">
+                        <a href="#" class="progress-bar progress-bar-striped progress-bar-animated" id="popover" style="width:92%; height: 25px;" data-toggle="popover" data-placement="right" data-content="De progressie die ik heb gemaakt" data-trigger="hover">92%</a>
+                    </div>
+<br><br>
+                    <figure class="col-md-8 mx-auto">
+                        <figcaption class="figure-caption text-center"><h6>W3Schools jQuery Quiz</h6></figcaption>
+                        <img src="image/jQuery/W3C_jQuery_Quiz.jpg" class="img-fluid d-block rounded" alt="Bootstrap Quiz">
+                    </figure>
+<br><br>
+                    <h5>Urenverantwoording</h5>
+                    
+                    <p>
+                        JQuery is op zich wel breed, maar niet zoals JavaScript. Hierdoor heb ik minder tijd hoeven besteden in de tutorial van <a href="https://www.w3schools.com/Jquery/default.asp" target="_blank">w3schools.com/Jquery</a>. Ik ben zo’n 8 uur met de tutorial bezig geweest. Verder heb ik ruim 6 uur aan tutorials gekeken op <a href="https://www.youtube.com/?hl=nl&gl=NL" target="_blank">YouTube</a>.
+                    </p>
+                    
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Tutorial site</th>
+                                <th>Aantal uur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>W3Schools</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Youtube</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                        
+                        <tfoot class="thead-dark">
+                            <tr>
+                                <th>Totaal:</th>
+                                <th>14</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                </article>
+            </section>
+            
+            <div class="img-fluid w-100 parallax-window" data-parallax="scroll" data-image-src="image/reflection.jpg" data-android-fix="true" data-ios-fix="true" data-speed="0.7"></div>
+            
+            <section class="row hideme" id="eindreflectie">
+                <header class="col-md-12 text-center">
+                    <h2>Eindreflectie</h2>
+                </header>
+                <article class="col-md-10 mx-auto">
+                    <p>
+                        Tijdens dit portfolio heb ik gewerkt aan Bootstrap 4, JavaScript en jQuery. In alle drie de activiteiten heb ik mijzelf kunnen verbeteren. Ik weet nu hoe ik gemakkelijk een website kan bouwen met behulp van Bootstrap 4. Ook beheers ik JavaScript nu beter dan dat we in de lessen uitgelegd hebben gekregen. En met jQuery heb ik efficiëntere codes leren schrijven.
+<br>
+                        Toen ik begon met dit project had ik mij niet bedacht dat ik daadwerkelijk iets zou kunnen. Als je met deze gedachte begint, dan ben je alleen maar blij met alles wat ik uiteindelijk wel kan.
+<br>
+                        Het enige wat ik echt erg lastig vond was JavaScript. Dit is en blijft een erg lastige taal.
+<br>
+                        In alle drie de talen blijft genoeg te leren. De talen zijn onwijs breed.
+<br>
+                        Ik zou hiervoor eventueel programmeur experts voor hulp kunnen vragen, of mijn vragen op Stack Overflow zetten.
+                    </p>
+                    
+                    <h6>Bootstrap 4 progress</h6>
+                    <div class="progress" style="height:25px">
+                        <a href="#" class="progress-bar progress-bar-striped progress-bar-animated" id="popover" style="width:76%; height: 25px;" data-toggle="popover" data-placement="right" data-content="De progressie die ik heb gemaakt" data-trigger="hover">76%</a>
+                    </div>
+<br>
+                    <h6>JavaScript 4 progress</h6>
+                    <div class="progress" style="height:25px">
+                        <a href="#" class="progress-bar progress-bar-striped progress-bar-animated" id="popover" style="width:84%; height: 25px;" data-toggle="popover" data-placement="right" data-content="De progressie die ik heb gemaakt" data-trigger="hover">84%</a>
+                    </div>
+<br>                    
+                    <h6>jQuery progress</h6>
+                    <div class="progress" style="height:25px">
+                        <a href="#" class="progress-bar progress-bar-striped progress-bar-animated" id="popover" style="width:92%; height: 25px;" data-toggle="popover" data-placement="right" data-content="De progressie die ik heb gemaakt" data-trigger="hover">92%</a>
+                    </div>
+<br><br>                    
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Activiteiten</th>
+                                <th>Aantal uur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bootstrap 4</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td>jQuery</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Website</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Verslag</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                        
+                        <tfoot class="thead-dark">
+                            <tr>
+                                <th>Totaal:</th>
+                                <th>77</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                </article>
+            </section>
+        </div>
+        
+        <footer class="jumbotron footer text-center">
+            <div class="jumbotron-text">
+                <p>&copy; Stijn Slats | Portfolioverslag 2018</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

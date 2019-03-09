@@ -1,0 +1,47 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    /****************
+        Jumbotron
+    ****************/
+    
+    .header {
+        height: 50vh;
+        position: relative;
+    }
+
+    .video {
+        position:    absolute;
+        z-index:    -2;
+        right:      0;
+        top:        0;
+        width: inherit;
+        min-width:      100%;
+        min-height:     50vh;
+        overflow:   hidden;
+    }
+
+    #myVideo {
+        max-width: inherit;
+        min-width:  100%;
+        min-height: inherit;
+        height: 50vh;
+    }
+
+    .jumbotron.header {
+        padding:    0px;
+        margin:     0px auto;
+        background: none;
+        width:      90%;
+        min-height: 50vh;
+        display:    table;
+    }
+
+    .jumbotron.header .jumbotron-text {
+        display:        table-cell;
+        vertical-align: middle;
+        color:          white;
+        text-shadow:    0px 2px 5px black;
+    }
+    
+}
